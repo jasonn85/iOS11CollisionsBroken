@@ -41,7 +41,6 @@ class ViewController: UIViewController, UICollisionBehaviorDelegate {
         
         let gravity = UIGravityBehavior(items: [fallingSquare!])
         
-        animator.removeAllBehaviors()
         animator.addBehavior(collisionBehavior)
         animator.addBehavior(gravity)
     }
